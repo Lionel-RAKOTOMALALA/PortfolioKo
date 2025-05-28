@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme variables */
+    --color-primary: #9e634a;
+    --color-primary-hover: #c53121;
+    --color-primary-muted: #dab18b;
+    
+    --color-secondary: #643a29;
+    --color-secondary-hover: #70624e;
+    --color-secondary-muted: #9d9c84;
+    
+    --color-background: #faf6f1;
+    --color-background-secondary: #f5ede4;
+    --color-background-muted: #e8e8f0;
+    
+    --color-text: #1e1912;
+    --color-text-muted: #413f34;
+    --color-text-dark: #45455d;
+    
+    --color-border: rgba(158,99,74,0.2);
+    --color-border-hover: rgba(158,99,74,0.4);
+    --color-border-muted: rgba(100,58,41,0.3);
+  }
+
+  .dark {
+    /* Dark theme variables */
+    --color-primary: #dab18b;
+    --color-primary-hover: #c53121;
+    --color-primary-muted: #9e634a;
+    
+    --color-secondary: #70624e;
+    --color-secondary-hover: #9d9c84;
+    --color-secondary-muted: #643a29;
+    
+    --color-background: #1e1912;
+    --color-background-secondary: #413f34;
+    --color-background-muted: #45455d;
+    
+    --color-text: #dab18b;
+    --color-text-muted: #9d9c84;
+    --color-text-dark: #413f34;
+    
+    --color-border: rgba(218,177,139,0.2);
+    --color-border-hover: rgba(218,177,139,0.4);
+    --color-border-muted: rgba(112,98,78,0.3);
+  }
+}
+
+/* Smooth transitions for theme changes */
+@layer utilities {
+  * {
+    @apply transition-colors duration-200;
+  }
+}
